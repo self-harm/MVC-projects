@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+/*we can add @RequestMapping for the class. In order to open any method, we must write /employee/askDetails or /employee/*/
+@RequestMapping("/employee")
 public class myController {
 
     @RequestMapping("/")
