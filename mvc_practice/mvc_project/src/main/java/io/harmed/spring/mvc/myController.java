@@ -22,13 +22,13 @@ public class myController {
         return "ask-emp-details-view";
     }
 
-    /*@RequestMapping("showDetails")
+    /**@RequestMapping("showDetails")
     public String showEmpDetails(){
         return "show-emp-details-view";
     }*/
 
 
-    /*using of HttpServletRequest for saving in model*/
+    /**using of HttpServletRequest for saving in model*/
     /* @RequestMapping("showDetails")
     public String showEmpDetails(HttpServletRequest request, Model model) {
 
