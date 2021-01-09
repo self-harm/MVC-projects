@@ -47,11 +47,11 @@ public class myController {
     public String showEmpDetails(@RequestParam("employeeName") String empName
             , Model model) {
 
-   /*     String empName = request.getParameter("employeeName"); //получаем параметр*/
+   /*String empName = request.getParameter("employeeName"); //получаем параметр*/
         empName = "Mr/Mrs " + empName;
         model.addAttribute("nameAttribute", empName);
 
-        model.addAttribute("description", " - udemy instructor");
+       /*model.addAttribute("description", " - udemy instructor");*/
 
         return "show-emp-details-view";
     }
