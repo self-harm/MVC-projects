@@ -20,7 +20,7 @@
     </form>--%>
    
 <%--using forms from springframeword(check Controller2)--%>
-<form:form acrtion="showDetails" modelAttribute="employee">
+<form:form action="showDetails" modelAttribute="employee">
 
     Name <form:input path="name"/>
     <br><br>
