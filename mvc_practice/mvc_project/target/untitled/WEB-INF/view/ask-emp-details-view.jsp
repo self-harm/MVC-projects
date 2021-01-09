@@ -18,7 +18,8 @@
         <input type="submit"/>
 
     </form>--%>
-
+   
+<%--using forms from springframeword(check Controller2)--%>
 <form:form acrtion="showDetails" modelAttribute="employee">
 
     Name <form:input path="name"/>
