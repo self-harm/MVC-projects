@@ -64,6 +64,14 @@ public class Employee {
     public void setCarBrand(String carBrand) {
         this.carBrand = carBrand;
     }
+    
+    public Map<String, String> getCarBrands() {
+        return carBrands;
+    }
+
+    public void setCarBrands(Map<String, String> carBrands) {
+        this.carBrands = carBrands;
+    }
 
     @Override
     public String toString() {
