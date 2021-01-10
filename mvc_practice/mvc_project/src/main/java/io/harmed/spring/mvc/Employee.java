@@ -9,12 +9,18 @@ public class Employee {
     private Map<String, String> departments;
 /*для radiobutton формы*/
     private String carBrand;
+    private Map<String, String> carBrands;
 
     public Employee() {
         departments = new HashMap<>();
         departments.put("Information Technology", "IT");
         departments.put("Human Resources", "HR");
         departments.put("Sales", "Sales");
+        
+        carBrands = new HashMap<>();
+        carBrands.put("BMW", "BMW");
+        carBrands.put("MB", "Mercedes-Benz");
+        carBrands.put("Audi", "Audi");
     }
 
     public String getName() {
