@@ -46,6 +46,15 @@ public class Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
+    
+        public Map<String, String> getDepartments() {
+        return departments;
+    }
+
+    public void setDepartments(Map<String, String> departments) {
+        this.departments = departments;
+    }
+
 
     @Override
     public String toString() {
