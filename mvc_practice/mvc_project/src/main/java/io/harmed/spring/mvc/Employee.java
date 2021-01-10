@@ -5,8 +5,14 @@ public class Employee {
     private String surname;
     private int salary;
     private String department;
+/*добавлять HashMap для значение из Departments и задаем в нашем .jsp(view)*/
+    private Map<String, String> departments;
 
     public Employee() {
+        departments = new HashMap<>();
+        departments.put("Information Technology", "IT");
+        departments.put("Human Resources", "HR");
+        departments.put("Sales", "Sales");
     }
 
     public String getName() {
