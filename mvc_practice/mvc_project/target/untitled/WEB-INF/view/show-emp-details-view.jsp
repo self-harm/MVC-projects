@@ -17,6 +17,8 @@ Your name: ${employee.name}
 Your last name: ${employee.surname}
 <br>
 Your salary: ${employee.salary} :(
+<br>
+Select your department: ${employee.department}
 
 </body>
 
