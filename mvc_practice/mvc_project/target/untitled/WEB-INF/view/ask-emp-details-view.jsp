@@ -18,8 +18,9 @@
         <input type="submit"/>
 
     </form>--%>
-   
+
 <%--using forms from springframeword(check Controller2)--%>
+
 <form:form action="showDetails" modelAttribute="employee">
 
     Name <form:input path="name"/>
@@ -27,8 +28,15 @@
     Surname <form:input path="surname"/>
     <br><br>
     Salary <form:input path="salary"/>
+    <br><br>
+    Department <form:select path="department">
+    <form:option value="Information Technology" label="IT"/>
+    <form:option value="Human Resources" label="HR"/>
+    <form:option value="Sales" label="Sales"/>
+    <br><br>
+</form:select>
 
-    <input type="submit" value="click">
+    <input type="submit" value="click me">
 
 </form:form>
 
