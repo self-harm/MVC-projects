@@ -7,6 +7,8 @@ public class Employee {
     private String department;
 /*добавлять HashMap для значение из Departments и задаем в нашем .jsp(view)*/
     private Map<String, String> departments;
+/*для radiobutton формы*/
+    private String carBrand;
 
     public Employee() {
         departments = new HashMap<>();
@@ -54,7 +56,14 @@ public class Employee {
     public void setDepartments(Map<String, String> departments) {
         this.departments = departments;
     }
+    
+     public String getCarBrand() {
+        return carBrand;
+    }
 
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
+    }
 
     @Override
     public String toString() {
