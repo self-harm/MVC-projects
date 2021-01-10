@@ -30,9 +30,13 @@
     Salary <form:input path="salary"/>
     <br><br>
     Department <form:select path="department">
+  
+   <%--1.hard-coded вариант--%>
    <%-- <form:option value="Information Technology" label="IT"/>
     <form:option value="Human Resources" label="HR"/>
     <form:option value="Sales" label="Sales"/>--%>
+   
+   <%--2. вариант через HashMap'у--%>
     <form:options items="${employee.departments}"/>
     <br><br>
 </form:select>
