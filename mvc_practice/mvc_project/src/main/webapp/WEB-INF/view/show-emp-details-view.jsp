@@ -39,7 +39,10 @@
    <%--2. вариант через HashMap'у--%>
     <form:options items="${employee.departments}"/>
     <br><br>
-</form:select>
+   
+   Your car: ${employee.carBrand}
+   </form:select>
+   <br><br>
 
     <input type="submit" value="click me">
 
