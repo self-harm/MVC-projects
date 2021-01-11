@@ -24,8 +24,17 @@
 <form:form action="showDetails" modelAttribute="employee">
 
     Name <form:input path="name"/>
+    <%--вставляем информацию об ошибке + выделяем жирным и красным цветом--%>
+    <b style="color:#CD5C5C">
+    <form:errors path="name"/>
+    </b>
     <br><br>
+
+    <b style="color: #CD5C5C">*</b>
     Surname <form:input path="surname"/>
+    <b style="color:#CD5C5C">
+        <form:errors path="surname"/>
+    </b>
     <br><br>
     Salary <form:input path="salary"/>
     <br><br>
