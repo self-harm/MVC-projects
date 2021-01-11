@@ -4,11 +4,13 @@ package io.harmed.spring.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 @Controller
 /*we can add @RequestMapping for the class. In order to open any method, we must write /employee/askDetails or /employee/*/
@@ -35,8 +37,16 @@ public class myController {
 
     /*using of annotation @RequestParam for saving in model*/
     @RequestMapping("showDetails")
-    public String showEmpDetails(@ModelAttribute("employee") Employee employee) {
+    public String showEmpDetails(@Valid @ModelAttribute("employee") Employee employee, BindingResult bindingResult) {
 
-        return "show-emp-details-view";
+    /*    System.out.println("surname length = " + employee.getSurname().length());*/ /*выводит 0, не null -
+    поэтому аннотация @NotNull не работает*/
+
+        if(bindingResult.hasErrors()){
+            return "ask-emp-details-view";
+        }
+        else{
+            return "show-emp-details-view";
+        }
     }
 }
