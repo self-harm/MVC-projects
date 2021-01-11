@@ -13,6 +13,7 @@ public class Employee {
     /*для radiobutton формы*/
     private String carBrand;
     private Map<String, String> carBrands;
+    /*для spring формы checkbox (выбор нескольких вариаций)*/
     private String[] languages;
 
     public Employee() {
