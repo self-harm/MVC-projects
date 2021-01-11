@@ -34,10 +34,18 @@
     </form:select>
     <br><br>
     What cat do you want?
- <%--BMW<form:radiobutton path="carBrand" value="BMW"/>
+    <br>
+ <%--   BMW<form:radiobutton path="carBrand" value="BMW"/>
     Audi<form:radiobutton path="carBrand" value="Audi"/>
     MB<form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
+    <br><br>
+    Foreign language(s)
+    <br>
+   <%-- English <form:checkbox path="languages" value="English"/>
+    Chinese <form:checkbox path="languages" value="Chinese"/>
+    Japanese <form:checkbox path="languages" value="Japanese"/>--%>
+    <form:checkboxes path="languages" items="${employee.languageMap}"/>
 
     <input type="submit" value="click me">
 
