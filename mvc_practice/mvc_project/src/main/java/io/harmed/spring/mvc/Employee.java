@@ -1,22 +1,26 @@
 package io.harmed.spring.mvc;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Employee {
     private String name;
     private String surname;
     private int salary;
     private String department;
-/*добавлять HashMap для значение из Departments и задаем в нашем .jsp(view)*/
+    /*добавлять HashMap для значение из Departments и задаем в нашем .jsp(view)*/
     private Map<String, String> departments;
-/*для radiobutton формы*/
+    /*для radiobutton формы*/
     private String carBrand;
     private Map<String, String> carBrands;
+    private String[] languages;
 
     public Employee() {
         departments = new HashMap<>();
         departments.put("Information Technology", "IT");
         departments.put("Human Resources", "HR");
         departments.put("Sales", "Sales");
-        
+
         carBrands = new HashMap<>();
         carBrands.put("BMW", "BMW");
         carBrands.put("MB", "Mercedes-Benz");
@@ -54,29 +58,37 @@ public class Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
-    
-        public Map<String, String> getDepartments() {
+
+    public Map<String, String> getDepartments() {
         return departments;
     }
 
     public void setDepartments(Map<String, String> departments) {
         this.departments = departments;
     }
-    
-     public String getCarBrand() {
+
+    public String getCarBrand() {
         return carBrand;
     }
 
     public void setCarBrand(String carBrand) {
         this.carBrand = carBrand;
     }
-    
+
     public Map<String, String> getCarBrands() {
         return carBrands;
     }
 
     public void setCarBrands(Map<String, String> carBrands) {
         this.carBrands = carBrands;
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
     }
 
     @Override
