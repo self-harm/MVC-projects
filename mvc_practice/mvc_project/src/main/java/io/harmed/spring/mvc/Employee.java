@@ -1,9 +1,8 @@
 package io.harmed.spring.mvc;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import io.harmed.spring.mvc.validation.CheckEmail;
+
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,6 +12,8 @@ public class Employee {
     /*@NotEmpty(message = "surname is required field")*/
     @NotBlank(message = "surname is required field") /*расширяет аннотацию @NotEmpty, запрещая использовать пробелы*/
     private String surname;
+    @Min(value = 500, message = "must be greater than 499")
+    @Max(value = 1000, message = "must be less than 1001")
     private int salary;
     private String department;
     /*добавлять HashMap для значение из Departments и задаем в нашем .jsp(view)*/
@@ -23,6 +24,13 @@ public class Employee {
     /*для spring формы checkbox (выбор нескольких вариаций)*/
     private String[] languages;
     private Map<String, String> languageMap;
+    /*with annotation @Pattern we must write a special regular expression that we need*/
+    @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use the following pattern XXX-XX-XX")
+    private String phoneNumber;
+    /*создаем свою аннотацию
+    * check validation package*/
+    @CheckEmail(value = "abc.com", message = "email must end with abc.com")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
@@ -112,6 +120,22 @@ public class Employee {
 
     public void setLanguageMap(Map<String, String> languageMap) {
         this.languageMap = languageMap;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
