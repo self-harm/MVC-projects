@@ -33,6 +33,12 @@ Your language(s):
     </c:forEach>
 </ul>
 
+Your phone number: ${employee.phoneNumber}
+
+<br>
+
+Your email: ${employee.email}
+
 </body>
 
 </html>
