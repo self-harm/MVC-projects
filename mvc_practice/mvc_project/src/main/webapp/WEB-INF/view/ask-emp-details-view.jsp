@@ -28,22 +28,30 @@
     <b style="color:#CD5C5C">
     <form:errors path="name"/>
     </b>
+
     <br><br>
 
     <b style="color: #CD5C5C">*</b>
     Surname <form:input path="surname"/>
-    <b style="color:#CD5C5C">
-        <form:errors path="surname"/>
-    </b>
+    <b style="color:#CD5C5C"><form:errors path="surname"/></b>
+
     <br><br>
+
     Salary <form:input path="salary"/>
+    <b style="color:#CD5C5C"><form:errors path="salary"/></b>
+
     <br><br>
+
     Department <form:select path="department">
     <form:options items="${employee.departments}"/>
     </form:select>
+
     <br><br>
+
     What cat do you want?
     <br>
+
+    <%--hard-coded variant--%>
  <%--   BMW<form:radiobutton path="carBrand" value="BMW"/>
     Audi<form:radiobutton path="carBrand" value="Audi"/>
     MB<form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
@@ -55,6 +63,18 @@
     Chinese <form:checkbox path="languages" value="Chinese"/>
     Japanese <form:checkbox path="languages" value="Japanese"/>--%>
     <form:checkboxes path="languages" items="${employee.languageMap}"/>
+
+    <br><br>
+
+    Phone Number <form:input path="phoneNumber"/>
+    <b style="color:#CD5C5C"><form:errors path="phoneNumber"/></b>
+
+    <br><br>
+
+    Email <form:input path="email"/>
+    <b style="color:#CD5C5C"><form:errors path="email"/></b>
+
+    <br><br>
 
     <input type="submit" value="click me">
 
