@@ -15,4 +15,4 @@
 
 [click](https://github.com/self-harm/SpringFramework/tree/main/spring_security)
 
-![alt-text](https://github.com/self-harm/MVC-projects/blob/main/pngs/88.png)
+![alt-text](https://github.com/self-harm/MVC-projects/blob/main/pngs/88.PNG)
