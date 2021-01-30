@@ -7,5 +7,4 @@
 ![alt-text](https://github.com/self-harm/MVC-projects/blob/main/pngs/qw1.PNG)
 ![alt-text](https://github.com/self-harm/MVC-projects/blob/main/pngs/qw2.PNG)
 
-2. 
-
+<h2>MVC project from JavaRush</h2>
