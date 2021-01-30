@@ -1,6 +1,6 @@
 <h1>Spring Framework</h1>
 
-<h2>MVC with Spring Security</h2>
+<h2>MVC project</h2>
 
 [click](https://github.com/self-harm/SpringMVC/tree/main/mvc_practice/mvc_project) 
 
