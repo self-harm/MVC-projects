@@ -20,6 +20,6 @@ The Spring Web model-view-controller (MVC) framework is designed around a Dispat
 [click](https://github.com/self-harm/SpringFramework/tree/main/spring_security)
 
 1. using a DB with bcrypt;
-2. using passwords in memory(bad decision)
+2. using passwords in memory(bad decision);
 
 ![alt-text](https://github.com/self-harm/MVC-projects/blob/main/pngs/88.PNG)
